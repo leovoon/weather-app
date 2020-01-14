@@ -7,6 +7,9 @@ const axios = require('axios')
 const express = require('express')
 const app = express()
 
+var port = process.env.PORT || 3000;
+
+
 app.use(express.json())
 app.use(express.static('public'))
 
@@ -18,6 +21,6 @@ app.post('/weather', (req, res) => {
   }).then(data => res.json(data.data.currently))
 })
 
-app.listen(3000, () => {
+app.listen(port, () => {
   console.log('Server Started')
 })
