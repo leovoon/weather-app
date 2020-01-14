@@ -1,0 +1,104 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+background: #ffe3ed;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+height: 100vh;
+width: 100%;
+
+}
+
+.container {
+  border-radius: 10px;
+  min-width: 90%;
+  background: white;
+  box-shadow: 0 0.2px 3px .5px rgba(0, 0, 0, 0.55);
+}
+
+
+.header {
+  text-align: center;
+  margin: 2rem;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.general-information {
+text-align: center;
+line-height: 1.8;
+}
+
+.detail-section {
+   font-family: 'Noto Serif SC', serif; 
+
+  display: grid;
+  grid-auto-flow: column;
+
+  padding: 1rem;
+}
+
+
+
+.detail {
+  color: #47ada7;
+  font-weight: 800;
+  padding: 10px 2rem;
+}
+
+.value {
+  padding-top: 20px;
+  color: #4c8b87;
+  text-align: center;
+}
+
+.bordered {
+  border-left: 1px dotted #beebe9 ;
+  border-right: 1px dotted #beebe9;
+}
+
+input[type=text] {
+  font-family: 'Noto Serif SC', serif; 
+
+  margin-bottom: 1.5rem;
+  padding: 10px;
+  width: 100%;
+  border-radius: 5px;
+  border: .5px solid rgba(0, 0, 0, 0.55);
+}
+
+input[type=text]::placeholder {
+  text-align: center;
+  opacity: 87%;
+}
+
+input[type=text]:focus {
+outline: aqua;
+}
+
+
+footer {
+  padding: 10px;
+  font-size: small;
+}
+
+.darksky-logo {
+  font-size: small;  position: fixed;
+  bottom: 0;
+  right: 0;
+  padding: 10px;
+  text-decoration: none;
+  
+}
